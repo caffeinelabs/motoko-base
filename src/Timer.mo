@@ -30,7 +30,7 @@
 ///
 /// :::note Further information
 ///
-/// [Further usage information for timers](https://internetcomputer.org/docs/current/developer-docs/backend/periodic-tasks#timers-library-limitations).
+/// [Further usage information for timers](https://internetcomputer.org/docs/building-apps/network-features/periodic-tasks-timers#timers-library-limitations).
 /// :::
 ///
 /// :::note Compilation flag
