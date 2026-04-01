@@ -1,6 +1,6 @@
 "use strict";
 
-// Detect "mo:base/..." imports within the base library itself (https://github.com/dfinity/motoko-base/pull/487)
+// Detect "mo:base/..." imports within the base library itself (https://github.com/caffeinelabs/motoko-base/pull/487)
 
 const { join } = require("path");
 const { readFileSync } = require("fs");

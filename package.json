@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dfinity/motoko-base.git"
+    "url": "git+https://github.com/caffeinelabs/motoko-base.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dfinity/motoko-base/issues"
+    "url": "https://github.com/caffeinelabs/motoko-base/issues"
   },
-  "homepage": "https://github.com/dfinity/motoko-base#readme",
+  "homepage": "https://github.com/caffeinelabs/motoko-base#readme",
   "devDependencies": {
     "execa": "^4.1.0",
     "fast-glob": "^3.2.12",

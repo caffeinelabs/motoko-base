@@ -2,7 +2,7 @@
 name = "base"
 version = "0.16.2"
 description = "The Motoko base library"
-repository = "https://github.com/dfinity/motoko-base"
+repository = "https://github.com/caffeinelabs/motoko-base"
 keywords = [ "base" ]
 license = "Apache-2.0"
 

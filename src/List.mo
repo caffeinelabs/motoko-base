@@ -380,7 +380,7 @@ module {
   /// |-------------|-------------|
   /// | `O(size*size)`  | `O(size*size)`  |
   public func flatten<T>(l : List<List<T>>) : List<T> {
-    //FIXME: this is quadratic, not linear https://github.com/dfinity/motoko-base/issues/459
+    //FIXME: this is quadratic, not linear https://github.com/caffeinelabs/motoko-base/issues/459
     foldLeft<List<T>, List<T>>(l, null, func(a, b) { append<T>(a, b) })
   };
 
