@@ -27,7 +27,7 @@ If you build your project using the [Vessel package manager] your package-set mo
 ```
   {
     name = "base",
-    repo = "https://github.com/dfinity/motoko-base",
+    repo = "https://github.com/caffeinelabs/motoko-base",
     version = "master",
     dependencies = [] : List Text
   }
@@ -46,7 +46,7 @@ Run the following commands to configure your local development branch:
 
 ```sh
 # First-time setup
-git clone https://github.com/dfinity/motoko-base
+git clone https://github.com/caffeinelabs/motoko-base
 cd motoko-base
 npm install
 

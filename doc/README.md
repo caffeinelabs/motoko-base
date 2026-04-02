@@ -13,5 +13,5 @@ Requires Python3 and Graphviz, then follow the instructions in `module_graph.py`
 
 ## Deploy to SDK website
 
-Library docs are auto-generated to [`doc-pages`](https://github.com/dfinity/motoko-base/tree/doc-pages) branch for every PR merged in `master`.
+Library docs are auto-generated to [`doc-pages`](https://github.com/caffeinelabs/motoko-base/tree/doc-pages) branch for every PR merged in `master`.
 The SDK playbook fetches the docs from `doc-pages` for each release.
