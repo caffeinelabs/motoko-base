@@ -12,4 +12,4 @@ core = "https://github.com/dfinity/motoko-core"
 
 [toolchain]
 moc = "1.8.0"
-wasmtime = "35.0.0"
+wasmtime = "44.0.1"
