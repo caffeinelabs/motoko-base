@@ -33,7 +33,7 @@ jobs:
         nix_path: nixpkgs=channel:nixos-25.11
     - name: "install dependencies"
       run: |
-        nix-env -iA nixpkgs.wasmtime nixpkgs.graphviz
+        nix-env -iA wasmtime graphviz -f '<nixpkgs>'
     - name: "install Motoko binaries"
       run: |
        wget https://github.com/dfinity/motoko/releases/download/${{ env.moc_version }}/motoko-Linux-x86_64-${{ env.moc_version }}.tar.gz
