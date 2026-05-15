@@ -2622,7 +2622,7 @@ module {
     let size = buffer.size();
     let newBuffer = Buffer<X>(size);
 
-    var i = 0;
+    let i = 0;
     var take = false;
     label iter for (element in buffer.vals()) {
       if (not (take or predicate element)) {
