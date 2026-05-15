@@ -12,29 +12,28 @@ permissions:
 # Remember to update me in package-set.yml as well
 env:
   vessel_version: "v0.7.0"
-  moc_version: "0.16.2"
+  moc_version: "1.8.0"
 
 jobs:
   tests:
     if: github.ref != 'refs/heads/next-moc' && github.base_ref != 'refs/heads/next-moc'
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
-    - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+    - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
       with:
-        node-version: 18
+        node-version: 24
     - run: npm ci
     - name: "initial checks"
       run: npm run validate
     - name: Check if Git tag exists
       run: echo "name=HEAD_TAG::$(git tag --points-at HEAD)" >> $GITHUB_ENV
-    - uses: cachix/install-nix-action@6ed004b9ccb68dbc28e7c85bee15fa93dbd214ac # v22
+    - uses: cachix/install-nix-action@8aa03977d8d733052d78f4e008a241fd1dbf36b3 # v31.10.6
       with:
-        nix_path: nixpkgs=channel:nixos-22.11
+        nix_path: nixpkgs=channel:nixos-25.11
     - name: "install dependencies"
       run: |
-        nix-env --install wasmtime --file '<nixpkgs>'
-        nix-env --install graphviz --file '<nixpkgs>'
+        nix-env -iA wasmtime graphviz -f '<nixpkgs>'
     - name: "install Motoko binaries"
       run: |
        wget https://github.com/dfinity/motoko/releases/download/${{ env.moc_version }}/motoko-Linux-x86_64-${{ env.moc_version }}.tar.gz

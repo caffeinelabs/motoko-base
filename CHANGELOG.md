@@ -1,3 +1,51 @@
+## 1.8.0
+
+(nothing)
+
+## 1.7.0
+
+(nothing)
+
+## 1.6.0
+
+(nothing)
+
+## 1.5.1
+
+(nothing)
+
+## 1.5.0
+
+(nothing)
+
+## 1.4.1
+
+(nothing)
+
+## 1.4.0
+
+(nothing)
+
+## 1.3.0
+
+(nothing)
+
+## 1.2.0
+
+(nothing)
+
+## 1.1.0
+
+(nothing)
+
+## 1.0.0
+
+(nothing)
+
+## 0.16.3
+
+(nothing)
+
 ## 0.16.2
 
 (nothing)
